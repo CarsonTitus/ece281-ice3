@@ -52,7 +52,7 @@ begin
 	   w_addends <= x"0F"; w_Cin <= '1'; wait for 10 ns;
 	       assert (w_sum = x"0" and w_Cout = '1') report "bad with ones" severity failure;
        w_addends <= x"F0"; w_Cin <= '0'; wait for 10 ns;
-	       assert (w_sum = x"0" and w_Cout = '0') report "bad with ones" severity failure;
+	       assert (w_sum = x"F" and w_Cout = '0') report "bad with ones" severity failure;
 	   w_addends <= x"78"; w_Cin <= '0'; wait for 10 ns;
 	       assert (w_sum = x"F" and w_Cout = '0') report "bad with ones" severity failure;
 	   w_addends <= x"B8"; w_Cin <= '0'; wait for 10 ns;
