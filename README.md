@@ -24,6 +24,8 @@ If any of the `assert` statements fail then GHDL will cease the simulation and e
 Assert statements of other severity levels will be reported, but not fail the workflow.
 
 ![my waveform from the Vivado simulation](simulation.png)
+![my ROUGH sketch of the top_basys](top_basys3.png)
+
 
 ## Documentation
 Elijah Butler helped me understand what i actually ahd to do since there was little besides "implement the deisgn into the top_basys3 file"
