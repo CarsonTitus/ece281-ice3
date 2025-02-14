@@ -22,3 +22,9 @@ Then it **elaborates** the entity defined by `$TB_ENTITY`
 Finally, the workflow **runs** the simulation. If successful then it will quietly exit with a `0` code.
 If any of the `assert` statements fail then GHDL will cease the simulation and exit with non-zero code; this will also cause the workflow to fail.
 Assert statements of other severity levels will be reported, but not fail the workflow.
+
+![my waveform from the Vivado simulation](simulation.png)
+
+## Documentation
+Elijah Butler helped me understand what i actually ahd to do since there was little besides "implement the deisgn into the top_basys3 file"
+He explained that we had to declare the component in the basys3 file aas well as the port map. He gave the advice of looking back at ICE2 for a refresher.
