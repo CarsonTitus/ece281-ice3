@@ -23,7 +23,7 @@ architecture test_bench of ripple_adder_tb is
  
 	-- declare signals needed to stimulate the UUT inputs
 	signal w_addends     : std_logic_vector(7 downto 0) := x"00"; -- the numbers being added
-	signal w_sum         : std_logic_vector(3 downto 0);
+	signal w_sum         : std_logic_vector(3 downto 0) := x"0";
 	signal w_Cin, w_Cout : std_logic;
 
 begin
